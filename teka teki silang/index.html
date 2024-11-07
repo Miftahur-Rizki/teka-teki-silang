@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teka Teki Silang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Teka Teki Silang</h1>
+
+    <div class="score-container">
+        <p id="score">Score: 0</p>
+        <button onclick="checkAnswers()" class="validation-button">Submit</button>
+    </div>
+
+    <div class="game-container">
+        <div class="grid">
+            <!-- Across clues (example grid for updated questions) -->
+            <div class="cell clue-number" data-number="1"><input type="text" maxlength="1" data-answer="M"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="E"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="J"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="A"></div>
+            <div class="cell blank"></div>
+            <div class="cell clue-number" data-number="3"><input type="text" maxlength="1" data-answer="K"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="O"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="M"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="P"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="U"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="T"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="E"></div>
+            <div class="cell"><input type="text" maxlength="1" data-answer="R"></div>
+            <!-- Add other cells as per layout -->
+        </div>
+
+        <div class="hint">
+            <h3>Mendatar:</h3>
+            <ul>
+                <li>1. Tempat untuk menulis atau meletakkan benda</li>
+                <li>3. Alat untuk bekerja dan belajar secara digital</li>
+                <li>5. Ekspresi kreativitas manusia dalam berbagai bentuk</li>
+                <li>7. Tempat tinggal yang umum</li>
+                <li>9. Lembaran yang berisi tulisan atau gambar</li>
+            </ul>
+            <h3>Menurun:</h3>
+            <ul>
+                <li>1. Nama dagang atau label suatu produk</li>
+                <li>2. Bentuk ekspresi kreatif seperti lukisan atau musik</li>
+                <li>4. Alat pembayaran dalam bentuk kertas atau logam</li>
+                <li>6. Semua yang ada di sekitar kita dan tidak dibuat oleh manusia</li>
+                <li>8. Perasaan atau keinginan akan sesuatu yang diharapkan</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
